@@ -1,131 +1,60 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '../styles/Home.module.css';
+import { useEffect } from 'react';
+
 
 export default function Home() {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      import("particles.js").then(({ particlesJS }) => {
+        particlesJS.load('particles-js', '/particles.json', function() {
+          console.log('callback - particles.js config loaded');
+        });
+      }).catch((error) => console.log("particles.js load error:", error));
+    }
+  }, []);
+
   return (
     <div className={styles.container}>
+    {/* Particles.js Container */}
+    <div id="particles-js" className={styles.particlesContainer}></div>
+
       <Head>
-        <title>Create Next App</title>
+        <title>WayNexus</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <nav className={styles.navbar}>
+        <Image src="/images/Group 283.png" alt="WayNexus Logo" width={240} height={40} />
+        <div className={styles.navLinks}>
+          <a href="#solutions">Solutions</a>
+          <a href="#about">About Us</a>
+          <a href="/signin" className={styles.navLinks}>Sign In</a>
+
+          <a href="#contact" className={styles.contactUs}>Contact Us</a>
+        </div>
+      </nav>
+
+      <main className={styles.main}>
         <h1 className={styles.title}>
-          Learn <a href="https://nextjs.org">Next.js!</a>
+          Get insights from every step using AI
         </h1>
 
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className={styles.ctaButtons}>
+          <button className={styles.signUp}>Sign Up</button>
+          <button className={styles.bookAppointment}>Book an appointment</button>
         </div>
       </main>
 
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
+      <footer className={styles.footer}>
+        <a href="#terms">Terms & policies</a>
+        <a href="#privacy">Privacy policy</a>
+        <a href="#brand">Brand guidelines</a>
+        <div className={styles.socialMediaIcons}>
+          {/* Add social media icons here */}
+        </div>
       </footer>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
     </div>
-  );
+  )
 }

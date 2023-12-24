@@ -1,0 +1,56 @@
+/* styles/Signin.module.css */
+.signInContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5; /* Replace with the actual background color */
+  }
+  
+  .signInForm {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .signInForm h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .signInForm input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* This ensures padding doesn't affect the overall width */
+  }
+  
+  .signInForm .forgotPassword {
+    display: block;
+    text-align: right;
+    margin-bottom: 2rem;
+    color: #0066ff;
+    text-decoration: none;
+  }
+  
+  .signInForm button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signInForm button:hover {
+    background-color: #0056b3;
+  }
+  

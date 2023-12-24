@@ -1,92 +1,87 @@
 .container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url('/images/logoback.png'); 
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif; 
 }
 
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0 0 1rem;
-  line-height: 1.15;
-  font-size: 3.6rem;
-}
-
-.title {
-  text-align: center;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.grid {
+.navbar {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  max-width: 800px;
-  margin-top: 3rem;
+  width: 100%;
+  padding: 2rem 9rem; /* Adjust padding to match the spacing in your design */
+  background-color: #ffffff; /* Adjust the navbar background color if needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* This adds a subtle shadow to the navbar */
 }
 
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
+.navLinks a {
+  margin: 0 1rem;
   text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition:
-    color 0.15s ease,
-    border-color 0.15s ease;
+  color: #333; /* Adjust the color to match your design */
+  font-weight: bold; /* Adjust font styling as needed */
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.contactUs {
+  border: 1px solid #0056b3; /* Adjust the border color to match your design */
+  padding: 0.5rem 1rem;
+  border-radius: 5px; /* Adjust the border radius to match your design */
 }
 
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+.main {
+  text-align: center;
+  padding: 22.5rem 1rem; /* Adjust the padding to match your design */
 }
 
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
+.title {
+  color: #0056b3; /* Adjust the color to match your design */
+  margin-bottom: 2rem; /* Adjust the margin to match your design */
+  font-size: 2rem; /* Adjust the font size to match your design */
 }
 
-.logo {
-  height: 1em;
+.ctaButtons {
+  display: flex;
+  gap: 1rem; /* Adjust the gap between buttons to match your design */
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
+.ctaButtons button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Adjust the font size to match your design */
+  font-weight: bold; /* Adjust font styling as needed */
+  color: #ffffff; /* Adjust the color to match your design */
+  background-color: #0066ff; /* Adjust the background color to match your design */
+  transition: background-color 0.3s ease;
+}
+
+.ctaButtons button:hover {
+  background-color: #0056b3; /* Adjust the hover color to match your design */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* This adds a subtle shadow to the top of the footer */
+}
+
+.footer a {
+  text-decoration: none;
+  color: #333; /* Adjust the color to match your design */
+  margin-right: 1rem; /* Adjust the margin to match your design */
+}
+
+.socialMediaIcons {
+  /* Add styles for your social media icons here */
 }
