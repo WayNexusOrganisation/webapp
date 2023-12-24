@@ -1,2 +1,2 @@
 This is a starter template for [Learn Next.js](https://nextjs.org/learn).
-npm instal -----> npm run dev
+npm install -----> npm run dev-------> localhost3000
