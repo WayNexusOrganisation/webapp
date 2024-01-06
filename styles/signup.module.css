@@ -1,0 +1,56 @@
+/* styles/Signin.module.css */
+.signUpContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5; /* Replace with the actual background color */
+  }
+  
+  .signUpForm {
+    background: #4792f5;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .signUpForm h2 {
+    color: #4792f5;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .signUpForm input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    box-sizing: border-box; /* This ensures padding doesn't affect the overall width */
+  }
+  
+  .signUpForm .sign {
+    display: block;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4792f5;
+    text-decoration: none;
+  }
+  
+  .signUpForm .signInbutton {
+    width: 100%;
+    padding: 1rem;
+    background-color: #4792f5;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  
+  .signUpForm button:hover {
+    background-color: #0056b3;
+  }
+  

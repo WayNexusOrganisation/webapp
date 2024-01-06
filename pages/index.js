@@ -42,8 +42,7 @@ export default function Home() {
         </h1>
 
         <div className={styles.ctaButtons}>
-          <button className={styles.signUp}>Sign Up</button>
-          <button className={styles.bookAppointment}>Book an appointment</button>
+          <a href="/sign_up"> <button className={styles.button}>Sign Up</button></a>
         </div>
       </main>
 
