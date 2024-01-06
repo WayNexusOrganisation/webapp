@@ -26,15 +26,32 @@ export default function Home() {
       </Head>
 
       <nav className={styles.navbar}>
-        <Image src="/images/Group 283.png" alt="WayNexus Logo" width={240} height={40} />
-        <div className={styles.navLinks}>
-          <a href="#solutions">Solutions</a>
-          <a href="#about">About Us</a>
-          <a href="/signin" className={styles.navLinks}>Sign In</a>
+  <Image src="/images/Group 283.png" alt="WayNexus Logo" width={240} height={40} />
+  <div className={styles.navLinks}>
+        {/* Wrap the Solutions link and the dropdown content in a div with the navItem class */}
+        <div className={styles.navItem}>
+      <a href="#solutions" className={styles.navLink}>Solutions</a>
+      <div className={styles.dropdownContent}>
+        <a href="#navigate">Navigate</a>
+        <a href="#analyse">Analyse</a>
+        <a href="#combine">Combine</a>
+        <a href="#optimise">Optimise</a>
+      </div>
+    </div>
+    {/* Wrap the About Us link and the dropdown content in a div with the navItem class */}
+    <div className={styles.navItem}>
+      <a href="#about" className={styles.navLink}>About Us</a>
+      <div className={styles.dropdownContent}>
+        <a href="#about">Learn More</a>
+        <a href="#team">Join Us</a>
+      </div>
+    </div>
 
-          <a href="#contact" className={styles.contactUs}>Contact Us</a>
-        </div>
-      </nav>
+    <a href="/signin" className={styles.navLink}>Sign In</a>
+    <a href="#contact" className={styles.contactUs}>Contact Us</a>
+  </div>
+</nav>
+
 
       <main className={styles.main}>
         <h1 className={styles.title}>
