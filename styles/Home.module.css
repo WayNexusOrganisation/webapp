@@ -1,3 +1,15 @@
+@keyframes backgroundSlide {
+  0%, 100% { 
+    background-image: url('/images/logoBack.png');
+  }
+  33% { 
+    background-image: url('/images/logoback1.png');
+  }
+  67% { 
+    background-image: url('/images/loogoback2.png');
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -8,6 +20,7 @@
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif; 
+  animation: backgroundSlide 10s ease-in-out infinite;
 }
 
 
