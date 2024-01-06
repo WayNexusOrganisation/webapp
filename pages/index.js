@@ -26,40 +26,39 @@ export default function Home() {
       </Head>
 
       <nav className={styles.navbar}>
-  <Image src="/images/Group 283.png" alt="WayNexus Logo" width={240} height={40} />
-  <div className={styles.navLinks}>
-        {/* Wrap the Solutions link and the dropdown content in a div with the navItem class */}
-        <div className={styles.navItem}>
-      <a href="#solutions" className={styles.navLink}>Solutions</a>
-      <div className={styles.dropdownContent}>
-        <a href="#navigate">Navigate</a>
-        <a href="#analyse">Analyse</a>
-        <a href="#combine">Combine</a>
-        <a href="#optimise">Optimise</a>
+  <div className={styles.leftContent}>
+    <Image src="/images/Group 283.png" alt="WayNexus Logo" width={240} height={40} />
+    <div className={styles.navLinks}>
+      <div className={styles.navItem}>
+        <a href="#solutions" className={styles.navLink}>Solutions</a>
+        <div className={styles.dropdownContent}>
+          <a href="#navigate">Navigate</a>
+          <a href="#analyse">Analyse</a>
+          <a href="#combine">Combine</a>
+          <a href="#optimise">Optimise</a>
+        </div>
+      </div>
+      <div className={styles.navItem}>
+        <a href="#about" className={styles.navLink}>About Us</a>
+        <div className={styles.dropdownContent}>
+          <a href="#about">Learn More</a>
+          <a href="#team">Team</a>
+        </div>
       </div>
     </div>
-    {/* Wrap the About Us link and the dropdown content in a div with the navItem class */}
-    <div className={styles.navItem}>
-      <a href="#about" className={styles.navLink}>About Us</a>
-      <div className={styles.dropdownContent}>
-        <a href="#about">Learn More</a>
-        <a href="#team">Join Us</a>
-      </div>
-    </div>
-
-    <a href="/signin" className={styles.navLink}>Sign In</a>
-    <a href="#contact" className={styles.contactUs}>Contact Us</a>
+  </div>
+  <div className={styles.button_7}>
+    <a href="/signin"><button className={styles.button}>Sign In</button></a>
   </div>
 </nav>
-
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           Get insights from every step using AI
         </h1>
 
-        <div className={styles.ctaButtons}>
+        <div className={styles.button_7}>
           <a href="/sign_up"> <button className={styles.button}>Sign Up</button></a>
+          <a href="/book-an-appointment"> <button className={styles.button}>Book an appointment</button></a>
         </div>
       </main>
 
