@@ -30,21 +30,32 @@ export default function Home() {
         <div className={styles.navLinks}>
           <a href="#solutions">Solutions</a>
           <a href="#about">About Us</a>
-          <a href="/signin" className={styles.navLinks}>Sign In</a>
-
-          <a href="#contact" className={styles.contactUs}>Contact Us</a>
+          
+          
+        
         </div>
       </nav>
+      
+      <nav className={styles.topbar}>
+        <div className={styles.button_7}>
+        <a href="/signin"> <button className={styles.button}>Sign In</button></a>
+
+        </div>
+
+      </nav>
+
+      
 
       <main className={styles.main}>
         <h1 className={styles.title}>
           Get insights from every step using AI
-        </h1>
+          <div className={styles.button_7}>
+          <a href="/book-an-appointment"> <button className={styles.button}>Book an appointment</button></a>
+          
+          </div>
+          
 
-        <div className={styles.ctaButtons}>
-          <button className={styles.signUp}>Sign Up</button>
-          <button className={styles.bookAppointment}>Book an appointment</button>
-        </div>
+        </h1>
       </main>
 
       <footer className={styles.footer}>
