@@ -5,16 +5,18 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f0f2f5; /* Replace with the actual background color */
+    background: rgba(0, 0, 0, 0.6); /* Replace with the actual background color */
   }
   
   .signUpForm {
-    background: #4792f5;
+    background: #ffffff;
     padding: 2rem;
-    border-radius: 10px;
+    text-align: center;
+    margin: left;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 400px;
+    height: auto;
   }
   
   .signUpForm h2 {
@@ -25,6 +27,8 @@
   
   .signUpForm input {
     width: 100%;
+    margin: 20px auto;
+    display: block;
     padding: 1rem;
     margin-bottom: 1rem;
     border: 1px solid #ccc;
@@ -33,24 +37,53 @@
   }
   
   .signUpForm .sign {
-    display: block;
-    text-align: center;
-    margin-bottom: 2rem;
+    height: auto;
+    text-align: right;
     color: #4792f5;
     text-decoration: none;
   }
   
-  .signUpForm .signInbutton {
+  .signUpForm button:first-child {
     width: 100%;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
     padding: 1rem;
-    background-color: #4792f5;
+    background-color: #4792F5;
     color: white;
     border: none;
     border-radius: 0px;
     cursor: pointer;
   }
-  
-  .signUpForm button:hover {
+
+  .signUpForm button:nth-child(2) {
+    width: 100%;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #6ACEEE;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+
+
+.signUpForm button:hover {
     background-color: #0056b3;
   }
   
+  .or-line {
+    flex: 1;
+    height: 1px;
+    background-color: #000;
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
+
+  .signUpForm .checkbox {
+    height: auto;
+    text-align: left;
+    color: #4792f5;
+    text-decoration: none;
+  }

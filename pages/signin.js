@@ -11,11 +11,11 @@ export default function SignIn() {
       </Head>
 
       <div className={styles.signInForm}>
-        <h2>Sign In</h2>
+        <h2>Log In</h2>
         <input type="text" placeholder="username" />
         <input type="password" placeholder="password" />
         <a href="#" className={styles.forgotPassword}>Forgot Password?</a>
-        <button type="submit">Sign In</button>
+        <button type="submit">Log In</button>
       </div>
     </div>
   );

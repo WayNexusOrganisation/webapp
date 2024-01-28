@@ -48,7 +48,7 @@ export default function Home() {
     </div>
   </div>
   <div className={styles.button_7}>
-    <a href="/signin"><button className={styles.button}>Sign In</button></a>
+    <a href="/signin"><button className={styles.button}>Log In</button></a>
   </div>
 </nav>
       <main className={styles.main}>

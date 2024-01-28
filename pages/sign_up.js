@@ -14,9 +14,16 @@ export default function SignUp() {
         <h2>Sign Up</h2>
         <input type="text" placeholder="Your email" />
         <input type="password" placeholder="Your password" />
-        <p>Do you have an account<a href="#" className={styles.sign}>Sign In</a></p>
-        <button type="submit">Sign Up</button>
-        <button type="submit">Login via Twitter</button>
+        
+        <p>I agree to the Terms of Service <input type="checkbox" className={styles.checkbox}></input> </p>
+        <div class="button-container">
+           <button type="submit">Sign Up</button>
+            <button type="submit">Login via Twitter</button>
+           </div>
+           
+        
+           <p>Do you have an account?<a href="#" className={styles.sign}>Sign In</a></p>
+        
       </div>
     </div>
   );
