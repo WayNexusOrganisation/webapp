@@ -25,27 +25,26 @@
   text-align: center;
 }
 
-.book_an_appointmentForminput {
-    width: 100%;
-    margin: 20px auto;
-    text-align: center;
-    display: block;
-    padding: 20rem;
-    margin-bottom: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0px;
-    box-sizing: content /* This ensures padding doesn't affect the overall width */
+.book_an_appointmentForm input {
+  width: 100%;
+  margin: 20px auto;
+  display: block;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box; /* This ensures padding doesn't affect the overall width */
 }
 
 .book_an_appointmentForm .privacypolicy {
-  display: block;
+  display: inline-block;
   text-align: right;
   margin-bottom: 2rem;
   color: #0066ff;
   text-decoration: none;
 }
 
-.book_an_appointment button {
+.book_an_appointmentForm button:first-child {
   width: 100%;
   padding: 1rem;
   background-color: #4792F5;
@@ -55,6 +54,6 @@
   cursor: pointer;
 }
 
-.book_an_appointment button:hover {
+.book_an_appointmentForm button:hover {
   background-color: #0056b3;
 }

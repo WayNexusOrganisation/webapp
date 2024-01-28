@@ -16,8 +16,10 @@ export default function book_an_appointment() {
         <input type="text" placeholder="Work email" />
         <input type="text" placeholder="Company name" />
         <input type="text" placeholder="Your phone number" />
-        <p> By submitting this form, you agree to WayNexus <a href="#" className={styles.privacypolicy}>Privacy Policy</a> </p>
-        <button type="submit">Submit</button>
+        <p> By submitting this form, you agree to WayNexus's <a href="#" className={styles.privacypolicy}>Privacy Policy</a> </p>
+        <div class="button-container"><button type="submit">Submit</button>
+        </div>
+        
       </div>
     </div>
   );

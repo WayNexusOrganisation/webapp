@@ -15,7 +15,8 @@ export default function SignUp() {
         <input type="text" placeholder="Your email" />
         <input type="password" placeholder="Your password" />
         
-        <p>I agree to the Terms of Service <input type="checkbox" className={styles.checkbox}></input> </p>
+        <p> I agree to the Terms of Service </p>
+
         <div class="button-container">
            <button type="submit">Sign Up</button>
             <button type="submit">Login via Twitter</button>

@@ -58,7 +58,13 @@
 }
 
 .title {
-  color: #0056b3; /* Adjust the color to match your design */
+  color: #000000; /* Adjust the color to match your design */
+  margin-bottom: 0.5rem; /* Adjust the margin to match your design */
+  font-size: 2rem; 
+}
+
+.title2 {
+  color: #0093BA; /* Adjust the color to match your design */
   margin-bottom: 2rem; /* Adjust the margin to match your design */
   font-size: 2rem; 
 }
