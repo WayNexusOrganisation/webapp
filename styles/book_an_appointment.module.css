@@ -1,52 +1,59 @@
 /* styles/book_an_appointment.css */
-
 .book_an_appointmentContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #f0f2f5; /* Replace with the actual background color */
-  }
-  
-    .book_an_appointmentForm {
-      background: #fff;
-      padding: 10rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: 100%;
-      max-width: 400px;
-    }
-    
-    .book_an_appointmentFormh2 {
-      color: #4792F5;
-      margin-bottom: 2rem;
-      text-align: center;
-    }
-    
-    .book_an_appointmentForminput {
-      width: 100%;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 0px;
-      box-sizing: border-box; /* This ensures padding doesn't affect the overall width */
-    }
-    
-    .book_an_appointmentForm .privacypolicy {
-      display: block;
-      text-align: center;
-      margin-bottom: 2rem;
-      color: #4792F5;
-      text-decoration: none;
-    }
-    
-    .book_an_appointment .submitbutton {
-      width: 100%;
-      padding: 1rem;
-      background-color: #4792F5;
-      color: #4792F5;
-      border: none;
-      border-radius: 0px;
-      cursor: pointer;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.book_an_appointmentForm {
+  background: #ffffff;
+    padding: 2rem;
+    text-align: center;
+    margin: 20px auto 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.book_an_appointmentForm h2 {
+  color: #4792F5;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.book_an_appointmentForm input {
+  width: 100%;
+  margin: 20px auto;
+  display: block;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  box-sizing: border-box; /* This ensures padding doesn't affect the overall width */
+}
+
+.book_an_appointmentForm .privacypolicy {
+  display: inline-block;
+  text-align: right;
+  margin-bottom: 2rem;
+  color: #0066ff;
+  text-decoration: none;
+}
+
+.book_an_appointmentForm button:first-child {
+  width: 100%;
+  padding: 1rem;
+  background-color: #4792F5;
+  color: white;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+}
+
+.book_an_appointmentForm button:hover {
+  background-color: #0056b3;
+}

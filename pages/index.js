@@ -48,12 +48,15 @@ export default function Home() {
     </div>
   </div>
   <div className={styles.button_7}>
-    <a href="/signin"><button className={styles.button}>Sign In</button></a>
+    <a href="/signin"><button className={styles.button}>Log In</button></a>
   </div>
 </nav>
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Get insights from every step using AI
+          Get insights from every step
+        </h1>
+        <h1 className={styles.title2}>
+          using AI
         </h1>
 
         <div className={styles.button_7}>
